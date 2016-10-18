@@ -7,6 +7,7 @@ def main():
 	counter = 0
 	Labels = []
 	solutionUrls = []
+# Please edit this, as needed. yeah, i know you know that!	
 	username = "amarpandey"
 
 # Creating new directory for saving code files
