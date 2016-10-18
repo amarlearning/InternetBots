@@ -42,12 +42,12 @@ def main():
 # Language Extension Dictionary!
 # well you can add more language extension if you need!
 	Extensions = {'C' : 'c',
-				  'C++ 4.3.2' : 'cpp',
-				  'PYTH' : 'py',
-				  'C++ 4.9.2' : 'cpp',
-				  'PYTH 3.4' : 'py',
-				  'JAVA' : 'java'
-				 }
+		      'C++ 4.3.2' : 'cpp',
+		      'PYTH' : 'py',
+		      'C++ 4.9.2' : 'cpp',
+		      'PYTH 3.4' : 'py',
+		      'JAVA' : 'java'
+		     }
 
 # Navigating to Every url of the solution & get the solution code!
 	for link in solutionUrls:
