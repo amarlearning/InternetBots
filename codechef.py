@@ -2,6 +2,10 @@ import os
 from bs4 import BeautifulSoup
 import urllib2
 
+counter = 0
+Labels = []
+solutionUrls = []
+
 newpath = os.getcwd() + "/codechedCode" 
 if not os.path.exists(newpath):
     os.makedirs(newpath)
@@ -15,17 +19,22 @@ Links = soup.find('table', {'class' :None }).find_all('a')
 Links = Links[2:]
 
 # Labels(Names) of every Question you solved!
-Labels = []
 for Link in Links:
 	Labels.append(Link.text)
 
 # All urls of questions you solved
-solutionUrls = []
 for Link in Links:
 	solutionUrls.append(Link['href'])
 
+# Language Extension Dictionary!
+Extensions = {'C' : 'c',
+			  'C++ 4.3.2' : 'cpp',
+			  'PYTH' : 'py',
+			  'C++ 4.9.2' : 'cpp',
+			  'PYTH 3.4' : 'py',
+			  'JAVA' : 'java'
+			 }
 # Navigating to Every url of the solution & get the solution code!
-counter = 0
 for link in solutionUrls:
 	link = "http://codechef.com" + link
 	page = urllib2.urlopen(link)
@@ -37,7 +46,7 @@ for link in solutionUrls:
 	page = urllib2.urlopen(SourceCodeLink)
 	soup = BeautifulSoup(page.read(), "html.parser")
 	SourceCode = soup.find('pre', {'class' : None }).text
-	filename = Labels[counter] + '.' + FileExtension
+	filename = Labels[counter] + '.' + Extensions[FileExtension]
 	with open(os.path.join(newpath, filename), 'wb') as temp_file:
 	    temp_file.write(SourceCode)
 	counter += 1
