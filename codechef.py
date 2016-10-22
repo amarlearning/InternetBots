@@ -46,7 +46,19 @@ def main():
 		      'PYTH' : 'py',
 		      'C++ 4.9.2' : 'cpp',
 		      'PYTH 3.4' : 'py',
-		      'JAVA' : 'java'
+		      'JAVA' : 'java',
+		      "C++ 4.8.1", "cpp",
+		      "C++14", "cpp",
+		      "C++11", "cpp",
+		      "C99 strict", "c",
+		      "C#", "cs",
+		      "F#", "fs",
+		      "PYTH 3.1.2", "py",
+		      "ASM", "asm",
+		      "PHP", "php",
+		      "TEXT", "txt",
+		      "PERL", "pl",
+		      "JS", "js"
 		     }
 
 # Navigating to Every url of the solution & get the solution code!
