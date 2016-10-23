@@ -1,4 +1,5 @@
 # Importing all library that are used!
+from random import randint
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -65,8 +66,9 @@ def main():
 
 
 # Search for a Verified profile to follow as many people as we want!
+	random_users = ["iamsrk", "selenagomez", "cristiano", "jlo", "leomessi"]
 	search_field_element = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath(search_xpath))
-	search_field_element.send_keys("ipoonampandey")
+	search_field_element.send_keys(random_users[randint(0,4)])
 
 # We need to wait for sometime, as it's performing the search.
 	driver.implicitly_wait(5000)
