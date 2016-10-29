@@ -1,4 +1,4 @@
-## CodeDownloadBot
+## InternetBots
 :part_alternation_mark: Internet bots and web scrappers that will save a lot of your time!
 
 * [Codechef](https://github.com/amarlearning/InternetBots/blob/master/Internet%20Bots/codechef.py) Downloads all your codechef submissions and save them in a seperate directory with file extension.
