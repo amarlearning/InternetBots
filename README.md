@@ -8,3 +8,5 @@
 * [IRC Altcoin Tip Bot](https://github.com/unek/node-tip-bot) Tip with any altcoin technology on IRC!
 
 * [Monica](https://github.com/vedantrathore/Monica) A messenger bot which gives you restaurant recommendations and reviews based on your location, cuisine and budget.
+
+* [xkcd](https://gist.github.com/categulario/fea2ff98e57a826ad3316a0d05a665d7) A simple script that downloads every image in xkcd.com (it led me to discover some funny xkcd's).
