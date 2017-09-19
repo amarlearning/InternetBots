@@ -70,7 +70,7 @@ def main():
 		page = urllib2.urlopen(link)
 		soup = BeautifulSoup(page.read(), "html.parser")
 
-	# fetting code from this html page.
+	# fetching code from this html page.
 		getCode = soup.find('td', {'class' : 'centered', 'width': '75'}).find_all('a')
 
 	# Yes, file extension is neccessary. we need this while saving file.
